@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  aiohttp:
+    build: .
+    restart: always
+    command: ./start_gunicorn.sh
+    ports:
+    - 1234:8000
